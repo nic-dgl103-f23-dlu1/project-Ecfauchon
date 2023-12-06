@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About Us </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6599316b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="header-wrap">
+
+        <header>
+            <img src="images/logo.jpg" width="100" alt="company logo">
+
+            <nav> 
+                <ul id="nav-items">
+                    <li> <a href="index.html"> Home  </a></li>
+                    <li> <a href="projects.html"> Portfolio </a></li>
+                    <li> <a href="about.html"> Our Team </a></li>
+                </ul>
+            </nav>
+            <a class="toggle" onClick="showNav()">
+                <i class="fa-solid fa-bars fa-xl" style="color: #070706"></i>
+            </a>
+        </header>
+    </div>
+
+
+    <!-- || HERO || -->
+
+    <section class="hero">
+        <img src="images/team.png" width="100" alt="group photo of the team">
+
+        <div class="overlay"></div>
+
+        <p></p>
+        <h1> perspective design builds </h1>
+        <h2> meet our team </h2>
+    </section>
+
+    
+
+    <!-- || BIO || -->
+
+    <section class="bio">
+    
+        <div class="george-wrap">
+            <img src="images/george.png" width="100" alt="George, one of the owner/ opperators">
+            <div class="bio-wrap">
+                <h2> George Slomp </h2>
+                <p> George has been building since he was a boy on a farm in Rimbey Alberta, building barns and making foundations. He funded his way through University framing houses and pouring concrete. In 2011 George, his wife and 3 children moved to Courtenay, BC. He eventually started his own company, Steadfast Carpentry. Peter and George merged their two companies in 2016 and became Perspective Design Build and havn't looked back. George works hard and is easy to talk to. He is the guy who you'll hear whistling while he works.
+                </p>
+            </div>
+        </div>
+
+        <div class="peter-wrap">
+            <img src="images/peter.png" width="100" alt="Peter, one of the owner/ opperators">
+            <div class="bio-wrap">
+                <h2> Peter Bain </h2>
+                <p> Peter is passionate about creating beautiful and functional design. Born in Haida Gwaii, Peter spent much of his childhood observing and learning from nature and from his father - a forester. He studied mechanical engineering at BCIT and humanities at Langara College in Vancouver. During his First 10 years of Carpentry, he built architectural homes with a West Vancouver builder and in 2011 completed his red seal in Carpentry.  Comox Valley is now home, where Peter has embraced his finishing and cabinetry skills as PeterBain Carpentry,  In the last 4 years a  partnership with George Slomp has formed as Perspective Design LTD.  Peter works well with his clients in a creative process with attentive listening, problem solving, and patience - all of which are key attributes in building quality custom homes. 
+                </p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+  <!-- || CALL TO ACTION || -->
+
+  <section class="action">
+    <h1>get a hold of us today</h1>
+
+    <h2>your dream come true is just a click away</h2>
+
+    <button class="grow"> call our office</button>
+    <a href="quote.html"> <button class="grow" href="">request a quote</button> </a>
+  </section>
+
+    <!-- || FOOTER || -->
+    
+    <div class="footer-wrap">
+        <footer>
+            <img src="images/logo.jpg" width="100" alt="company logo">
+    
+       
+            <button class="grow" onclick="topFunction()" id="myBtn" title="Go to top">
+            Back to Top
+            </button>
+    
+        </footer>
+    </div>
+
+    <script>
+            function showNav() {
+              var element = document.getElementById("nav-items");
+              element.classList.toggle("show-items");
+            }
+      
+            function topFunction() {
+              /* this is from w3schools.com */
+              document.body.scrollTop = 0; // For Safari
+              document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+    </script>
+    
+</body>
+</html>
