@@ -1,0 +1,88 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 1.6rem;
+}
+
+
+/* || TYPOGRAPHY || */
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #008000;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: left;
+    color: #008000;
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: left;
+    color: #008000;
+}
+
+p {
+    font-size: 1.8rem;
+    color: #6A6B83;
+}
+
+
+/* || HEADER || */
+
+.header-wrap {
+    background-color: #008000;
+    padding: 2em;
+}
+
+header {
+    color: #008000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: none;
+    color: #F5F5DC;
+    gap: 1rem;
+}
+
+
+
+/* || HERO || */
+
+.hero-wrap {
+    background-image: url(images/hero-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5; /* make opacity affect image only */
+}
+
+
+/* || ABOUT || */
+
+.about {
+    background-color: #F5F5DC;
+}
+.about img {
+    margin: auto;
+    height: 20rem;
+    width: 40rem;
+
+}

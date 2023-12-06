@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perspective Design Builds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d6599316b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- || HEADER || -->
+    <div class="header-wrap">
+      <header>
+        <img src="images/logo.jpg" width="100" alt="company logo" />
+
+        <nav>
+          <ul id="nav-items">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="projects.html"> Portfolio </a></li>
+            <li><a href="about.html"> Our Team </a></li>
+          </ul>
+        </nav>
+        <a class="toggle" onClick="showNav()">
+          <i class="fa-solid fa-bars fa-xl" style="color: #070706"></i>
+        </a>
+      </header>
+    </div>
+
+    <!-- || HERO || -->
+
+    <section class="hero">
+      <img src="images/quote.png" width="100" alt="group cheering" />
+
+      <div class="overlay"></div>
+
+      <h1>come work with us today</h1>
+
+      <!-- || FORM || -->
+
+      <form>
+        <div class="input-wrap">
+          <label for="fname"> First Name: </label>
+          <input type="text" id="fname" placeholder=" John " />
+        </div>
+
+        <div class="input-wrap">
+          <label for="lname"> Last Name: </label>
+          <input type="text" id="lname" placeholder=" Doe " />
+        </div>
+
+        <div class="input-wrap">
+          <label for="email"> Email Address: </label>
+          <input
+            id="email"
+            type="email"
+            placeholder=" John_Doe@gmail.com "
+            required
+          />
+        </div>
+
+        <div class="input-wrap">
+          <label for="quote-request"> What are you looking for?</label>
+          <textarea
+            id="quote-request"
+            name="quote request"
+            placeholder="Im looking at getting a new timber framed deck structure"
+          >
+          </textarea>
+        </div>
+
+        <div class="submit">
+          <input type="submit" name="submit" value="send" />
+        </div>
+      </form>
+    </section>
+
+    <!-- || FOOTER || -->
+
+    <div class="footer-wrap">
+      <footer>
+        <img src="images/logo.jpg" width="100" alt="company logo" />
+        <p class="disclaimer">“This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
+
+        <button
+          class="grow"
+          onclick="topFunction()"
+          id="myBtn"
+          title="Go to top"
+        >
+          Back to Top
+        </button>
+      </footer>
+    </div>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+
+      function topFunction() {
+        /* this is from w3schools.com */
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d6599316b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header-wrap">
+      <header>
+        <img src="images/logo.jpg" width="100" alt="company logo" />
+
+        <nav>
+          <ul id="nav-items">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="projects.html"> Portfolio </a></li>
+            <li><a href="about.html"> Our Team </a></li>
+          </ul>
+        </nav>
+        <a class="toggle" onClick="showNav()">
+          <i class="fa-solid fa-bars fa-xl" style="color: #070706"></i>
+        </a>
+      </header>
+    </div>
+
+    <!-- || HERO || -->
+
+    <section class="hero">
+      <img
+        src="images/project-img.png"
+        width="100"
+        alt="a home built by perspective design"
+      />
+
+      <div class="overlay"></div>
+
+      <p></p>
+      <h1>perspective disign builds</h1>
+      <h2>check out our projects and commitment to you</h2>
+    </section>
+
+    <!-- || PROJECTS || -->
+
+    <section class="projects">
+      <img src="images/about-planning.jpeg" alt="imagining a design"/>
+      <div class="bio-wrap">
+        <h3>start from the very begining</h3>
+        <p>
+          From initial dreams to the final key exchange, we at Perspective
+          Design Build Ltd. accompany homeowners every step of the way. Our
+          collaborative journey begins with understanding your vision,
+          navigating the design process, and culminates in the realization of
+          your dream home. With a commitment to excellence, we ensure a seamless
+          and rewarding experience from the very beginning to the very end.
+        </p>
+        <!--written by ChatGPT -->
+      </div>
+
+
+      
+          <img src="images/about-homeowner.png" alt="working on the plans" />
+          <div class="bio-wrap">
+            <h3>guided the whole way through</h3>
+            <p>
+              We thrive on bringing homeowners' wildest dreams to life. Our
+              one-on-one approach ensures personalized attention, turning
+              visions into reality. With passion and precision, we oversee every
+              detail to create the extraordinary spaces you've always imagined.
+            </p>
+            <!--written by ChatGPT -->
+          </div>
+   
+      
+
+      <img src="images/about-mountain-retreat.jpeg" alt="a finished custom home" />
+      <div class="bio-wrap">
+        <h3>from sea to sky</h3>
+        <p>
+          At Perspective Design Build Ltd., we craft dream homes from sea to
+          sky, curating personalized mountain getaways that elevate living. Our
+          commitment to detail ensures your retreat is not just a home but a
+          sanctuary immersed in nature's grandeur.
+        </p>
+        <!--written by ChatGPT -->
+      </div>
+
+   
+      
+          <img src="images/about-gazebo.png" alt="timber framed gazebo" />
+          <div class="bio-wrap">
+            <h3>one size does not fit all</h3>
+            <p>
+              No job is too small for Perspective Design Build Ltd. We
+              specialize in crafting custom timber-framed structures. From
+              small-scale visions to grand designs, our commitment to excellence
+              remains unwavering, ensuring timeless craftsmanship in every
+              detail.
+            </p>
+            <!--written by ChatGPT -->
+          </div>
+
+     
+
+      <img src="images/about-floorplan.png" alt="house layout blueprints"/>
+      <div class="bio-wrap">
+        <h3>from your dreams to paper</h3>
+        <p>
+          Collaborate with our skilled designers to transform your ideas into
+          reality through custom floor plans. Your dreams, meticulously crafted
+          and brought to life on paper.
+        </p>
+        <!--written by ChatGPT -->
+      </div>
+
+       
+          <img src="images/about-happy.png" alt="happy couple sitting on couch" />
+          <div class="bio-wrap">
+            <h3>dreams come true</h3>
+            <p>
+              At last, when the journey home is complete! With joyous hearts,
+              our happy homeowners rest comfortably in their brand-new haven
+              crafted by Perspective Design Build Ltd. A sanctuary of dreams
+              realized, where comfort meets happiness.
+            </p>
+            <!--written by ChatGPT -->
+          </div>
+    
+  
+    </section>
+
+    <!-- || CALL TO ACTION || -->
+
+    <section class="action">
+      <h1>get a hold of us today</h1>
+
+      <h2>your dream come true is just a click away</h2>
+
+      <button class="grow" href="">call our office</button>
+      <a href="quote.html">
+        <button class="grow" href="">request a quote</button>
+      </a>
+    </section>
+
+    <!-- || FOOTER || -->
+
+    <div class="footer-wrap">
+      <footer>
+        <img src="images/logo.jpg" width="100" alt="company logo" />
+        <p class="disclaimer">“This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
+
+        <button
+          class="grow"
+          onclick="topFunction()"
+          id="myBtn"
+          title="Go to top"
+        >
+          Back to Top
+        </button>
+      </footer>
+    </div>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+
+      function topFunction() {
+        /* this is from w3schools.com */
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+  </body>
+</html>
