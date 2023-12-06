@@ -242,6 +242,11 @@ footer {
   margin: 2px 22px 20px 22px;
 }
 
+.disclaimer {
+max-width: 40%;
+color:black;
+}
+
 
 /* ||  ----------- ABOUT PAGE  ----------- || */
 
